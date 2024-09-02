@@ -1,0 +1,118 @@
+h2{
+    margin: 0;
+}
+.count{
+    padding: calc(2vh + 2vw);
+}
+.questions{
+    align-self: flex-start;
+    height: 100vh;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.result{
+    margin-right:calc(5vw + 5vh);
+    background-color: #98cf25;
+    font-weight: bold;
+    font-size: larger;
+}
+.result:hover{
+    background-color: #4b8600;
+}
+.question-container{
+    display: flex;
+    margin: calc(1vh + 1vw) calc(4vh + 4vw) 0 calc(4vh + 4vw);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding:  calc(1vh + 1vw);
+}
+.title{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    padding:  calc(1vh + 1vw);
+    background-color: #0e0b29;
+}
+.options-container{
+    width: 60vw;    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: calc(1vh + 1vw);
+
+}   
+.options{
+    background-color: #0671b8;
+    font-size: calc(0.45vw + 0.45vh);
+    color: white;
+    padding: calc(.5vh + .5vw);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: calc(.5vh + .5vw);
+    width: 40%;
+    height: calc(2vw + 2vh);
+}
+
+.description{
+    display: flex;
+    flex-wrap: wrap;
+    padding: calc(.5vh + .5vw);
+    margin-left: calc(.5vw + .5vh);
+}
+
+.options:hover{
+    cursor: pointer;
+    background-color: #0a6789;
+}
+.btn{
+    border: none;
+    width: 100px;
+    padding: calc(.5vh + .5vw);
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.l:disabled {
+    background-color: #ccc;    
+    color: #666;            
+    cursor: not-allowed;      
+  }
+.l{
+    background-color: white;
+    font-weight: bold;
+    margin-left: calc(10vw + 10vh);
+}
+.l:hover{
+    background-color: #ccc;  
+}
+.r{
+    background-color: #181818;
+    color: white;
+    margin-right:calc(10vw + 10vh);
+}
+.r:disabled {
+    background-color: #3c3c3c;    
+    color: #666;            
+    cursor: not-allowed;      
+  }
+.r:hover{
+    background-color: #3c3c3c;  
+}
+.buttons-cont{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
