@@ -14,13 +14,13 @@ h2{
     align-items: center;
 
 }
-.result{
+.btn-result{
     margin-right:calc(5vw + 5vh);
     background-color: #98cf25;
     font-weight: bold;
     font-size: larger;
 }
-.result:hover{
+.btn-result:hover{
     background-color: #4b8600;
 }
 .question-container{

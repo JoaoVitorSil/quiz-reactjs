@@ -93,7 +93,7 @@ function Questions() {
             Question: {count} of {questions.length}{" "}
           </h2>
           {Object.keys(selecoes).length === questions.length ? (
-            <button className="btn result" onClick={handleClick}>Result</button>
+            <button className="btn btn-result" onClick={handleClick}>Result</button>
           ) : (
             <div></div>
           )}
