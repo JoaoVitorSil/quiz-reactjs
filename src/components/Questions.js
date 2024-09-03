@@ -14,8 +14,7 @@ function Questions() {
   const [selecoes, setSelecoes] = React.useState({});
   const [correctAnswer, setCorrectAnswer] = React.useState([]);
   const [answer, setAnswer] = React.useState([]);
-
-  const results = [];
+  const [results, setResults] = React.useState({});
 
   if (category === "Bash") {
     category = "bash";
@@ -37,6 +36,7 @@ function Questions() {
   }, []);
 
   const handleClick = (e) => {
+    localStorage.setItem('results', JSON.stringify(results));
     navigate("/Result");
   };
   const handleClicknext = () => {
@@ -65,9 +65,9 @@ function Questions() {
     }
   };
   useEffect(() => {
-    results[count-1] = [answer, correctAnswer];
+    setResults({...results,[count]: [answer, correctAnswer]});
   }, [answer, correctAnswer]);
-  console.log(results);
+
   if (questions.length === 0) {
     return (
       <div className="loading">
